@@ -2,12 +2,12 @@
 
 def main():
     hours = 2
-    seconds = timeInSec(hours)
-    print(f"{hours} hour(s) is {seconds} seconds.")
+    print(f"{hours} hour(s) is {timeInSec(hours)} seconds.")
 
-def timeInSec(h: float):
+def timeInSec(hours: float):
     """Converts given hours (h) into seconds"""
-    return h*3600
+    seconds = hours * 3600
+    return seconds
 
 main()
 

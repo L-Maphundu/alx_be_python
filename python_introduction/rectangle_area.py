@@ -2,11 +2,12 @@
 def main():
     length = 10
     width = 5
-    area = rectArea(length,width)
-    print(f"The area of the rectangle is: {area}")
+    print(f"The area of the rectangle is: {rectArea(length,width)}")
 
-def rectArea(l: float,w: float)-> float:
-    """Calculates the area of a rectangle given length and width. Assumes the user will always select positive values for length and width."""
-    return l*w
+def rectArea(length: float,width: float)-> float:
+    """Calculates the area of a rectangle given length and width. 
+    Assumes the user will always select positive values for length and width."""
+    area = length * width
+    return area
 
 main()
