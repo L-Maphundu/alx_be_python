@@ -4,10 +4,10 @@ def main():
     principal = 1000
     rate = 0.05
     time = 3
-    interest = interestAmount(principal,rate,time)
-    print(f"The simple interest is: {interest}")
+    print(f"The simple interest is: {interest(principal, rate,time)}")
 
-def interestAmount(p: float,r: float,t: float) -> float:
+def interest(p: float,r: float,t: float) -> float:
     """Calculates interest amount given: principal amount(p),interest rate (r) and time (t)"""
-    return p*r*t
+    interest = p*r*t
+    return interest
 main()
