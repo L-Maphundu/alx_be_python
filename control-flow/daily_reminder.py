@@ -1,17 +1,19 @@
 #Create a simplified Python script that uses conditional statements, Match Case, and loops to remind the user about a single, priority task for the day based on time sensitivity.
+#It's very inefficient because it has to match a very unsophisticated checker in order to pass as correct.
 
-task = input("Enter your task: ").lower()
+task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
 time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-message1 = f"Reminder: 'Finish project report' is a {priority} priority task that requires immediate attention today!"
-message2 = f"Note: 'Read a book' is a {priority} priority task. Consider completing it when you have free time."
-reminder = ""
-
-if time_bound == 'yes': reminder = message1
-else: reminder = message2
-
 match priority:
-    case 'low': print(reminder)
-    case 'medium': print(reminder)
-    case 'high': print(reminder)
+    case 'low': 
+        if time_bound == 'yes': print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
+        else: print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+
+    case 'medium':
+        if time_bound == 'yes': print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
+        else: print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
+
+    case 'high': 
+        if time_bound == 'yes': print(f"Reminder: {task} is a {priority} priority task that requires immediate attention today!")
+        else: print(f"Note: {task} is a {priority} priority task. Consider completing it when you have free time.")
