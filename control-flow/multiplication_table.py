@@ -7,6 +7,6 @@ def main():
 def times_table(number):
     """Returns a multiplicaiton table for any given positive integer."""
     for i in range(1, 11):
-        print(f"{number * i} = {number*i}")
+        print(f"{number} * {i} = {number*i}")
 
 main()
