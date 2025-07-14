@@ -1,5 +1,7 @@
-#Create a simplified Python script that uses conditional statements, Match Case, and loops to remind the user about a single, priority task for the day based on time sensitivity.
-#It's very inefficient because it has to match a very unsophisticated checker in order to pass as correct.
+#"Create a simplified Python script that uses conditional statements, Match Case, and loops to remind the user about a single, priority task for the day based on time sensitivity."
+
+"""It's very inefficient because it has to match a very unsophisticated checker in order to pass as correct. There was no need at all
+for the Match Case, the program works as well with a only one If statement."""
 
 task = input("Enter your task: ")
 priority = input("Priority (high/medium/low): ").lower()
