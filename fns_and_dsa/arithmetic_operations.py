@@ -1,6 +1,8 @@
 #contains a function that can perform all four basic arithmetic operations.
 
 def perform_operation(num1, num2, operation):
+    """performs any of the 4 basic arithmetic operations
+    given any 2 numbers and a specific operation"""
     if operation == "add":
         return (num1 + num2)
     elif operation == "subtract":
